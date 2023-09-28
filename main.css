@@ -110,6 +110,10 @@ section {
     margin-bottom: 30px;
 }
 
+#catalogo div img {
+    width: 24px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -280,4 +284,36 @@ footer {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 702px) {
+
+    nav {
+        position: static;
+    }
+
+    .nav_menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #catalogo ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    #catalogo li {
+        flex-grow: 1;
+        width: 80%;
+    }
+
+    .cards-concesiones {
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
 }
