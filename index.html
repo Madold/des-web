@@ -1,12 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMágico - Cine Moderno</title>
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
 </head>
 <body>
-    <h1>Index</h1>
+    <div class="banner"></div>
+    <nav>
+        <ul class="nav_menu">
+            <li><a class="name" href="#">CineMagico</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#concesiones">Alimentos</a></li>
+            <li><a href="#membresias">Membresías</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>CineMágico</h1>
+    </header>
+    
+    <main class="main">
+        <section id="inicio" >
+            <h2>¡Bienvenidos a CineMágico!</h2>
+            <p class="main-text">Experimenta la magia del cine con nosotros. Ofrecemos las películas más emocionantes en calidad de imagen y sonido excepcionales.</p>
+        </section>
+        
+        <section id="catalogo">
+            <h2>Catálogo de Películas</h2>
+            <ul>
+                <li>
+                    <img src="https://infoliteraria.com/wp-content/uploads/2022/05/la-probabilidad-estaditica.jpg.webp" alt="Película 1">
+                    <h3>La probabilidad estadistica del amor a primera vista</h3>
+                    <p>Hadley y Oliver comienzan a enamorarse lentamente en un vuelo de Nueva York a Londres, pero se ven obligados a separarse en la aduana.   </p>
+                    <button>Reservar</button>
+                </li>
+                <li>
+                    <img src="https://archivos-cms.cinecolombia.com/images/_aliases/exhibition_poster_mobile/5/8/9/3/43985-4-esl-CO/b03635ca5cab-2_poster_480x670.png" alt="Película 2">
+                    <h3>Saw x</h3>
+                    <p>Saw X es una próxima película de terror mexicana-estadounidense, dirigida por Kevin Greutert, y escrita por Josh Stolberg y Peter Goldfinger. Es la décima entrega en general de la serie de películas Saw y sirve como secuela directa de Saw y precuela de Saw II.</p>
+                    <button>Reservar</button>
+                </li>
+                <li>
+                    <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/puss-in-boots-the-last-wish/images/regions/pe/onesheet.jpg" alt="Película 2">
+                    <h3>El gato con botas</h3>
+                    <p>El Gato con Botas descubre que, debido a su pasión por la aventura, ha gastado ya 8 de sus 9 vidas. Por tanto, emprende un peligroso viaje en busca del legendario Último Deseo para solicitar que le restauren las vidas que ya perdió.</p>
+                    <button>Reservar</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="reservas">
+            <h2>Reserva tus Boletos</h2>
+            <p>Selecciona una película y horario:</p>
+            <form>
+                <label for="pelicula">Película:</label>
+                <select class="select" id="pelicula">
+                    <option value="1">La probabilidad estadistica del amor a primera vista</option>
+                    <option value="2">Saw X</option>
+                    <option value="3">El gato con botas</option>
+                    
+                </select>
+                <label for="horario">Horario:</label>
+                <select class="select" id="horario">
+                    <option value="tarde">Tarde (3:00 PM)</option>
+                    <option value="tarde">Tarde (5:00 PM)</option>
+                    <option value="tarde">Tarde (6:00 PM)</option>
+                    <option value="tarde">Tarde (7:00 PM)</option>
+                    <option value="noche">Noche (7:00 PM)</option>
+                    <option value="noche">Noche (9:00 PM)</option>
+
+                </select>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+        
+        <section id="concesiones">
+            <h2>Alimentos</h2>
+            <p class="concesiones-descripcion">Disfruta de nuestras deliciosas crispetas y de un buen refresco mientras te entretienes con la función:</p>
+
+            <ul class="cards-concesiones">
+                <li class="card-alimento">
+                    <img class="img-alimento" src="img/popcorn.png" alt="Palomitas">
+                    <h3>Crispetas</h3>
+                    <p class="precio">$7.000</p>
+                    <p>Crispetas saladas</p>
+                    <button>Ordenar</button>
+                </li>
+                <li class="card-alimento">
+                    <img class="img-alimento" src="img/soda.webp" alt="Refresco">
+                    <h3>Refresco</h3>
+                    <p class="precio">$5.000</p>
+                    <p>Gran variedad de refrescos, pepsi, cocacola, postobon</p>
+                    <button>Ordenar</button>
+                </li>
+
+                <li class="card-alimento">
+                    <img class="img-alimento" src="img/combito.png" alt="Refresco">
+                    <h3>Combo para niños</h3>
+                    <p class="precio">$13.000</p>
+                    <p>Un combito para que el niño disfrute de la pelicula en silencio.</p>
+                    <button>Ordenar</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="membresias">
+            <h2>Membresías</h2>
+            <p class="white">Obtén una membresía para disfrutar de beneficios exclusivos:</p>
+            <ul>
+                <li>
+                    <h3>Membresía Estándar</h3>
+                    <p>Acceso a descuentos en boletos y alimentos.</p>
+                    <button>Obtener</button>
+                </li>
+                <li>
+                    <h3>Membresía VIP</h3>                
+                    <p>Acceso a proyecciones exclusivas y asientos VIP.</p>
+                    <button>Obtener</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Próximos Estrenos</h2>
+        <ul class="upcoming_movies">
+            <li>
+                <img src="https://archivos-cms.cinecolombia.com/images/1/1/6/3/43611-2-esl-CO/cf1a918e2882-warner_thenun_cinecol_480x670.jpg" alt="Próxima Película" class="next_movie">
+                <p>Fecha de estreno: 2/10/2023</p>
+            </li>
+            <li>
+                <img src="https://pics.filmaffinity.com/Spider_Man_Cruzando_el_Multiverso-257260163-large.jpg" alt="Próxima Película" class="next_movie">
+                <p>Fecha de estreno: 13/10/2023</p>
+            </li>
+            
+        </ul>
+    </aside>
+    
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Estamos aquí para ayudarte. Contáctanos:</p>
+        <address>
+            <p>Dirección: Montería</p>
+            <p>Teléfono: 1234567890</p>
+            <p>Correo electrónico: correo@correo.com</p>
+        </address>
+    </footer>
 </body>
 </html>
