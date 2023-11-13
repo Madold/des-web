@@ -317,3 +317,9 @@ footer {
     }
 
 }
+
+.a-panel-administrador{
+    text-decoration: none;
+    color: gray;
+    font-size: smaller;
+}

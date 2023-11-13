@@ -17,9 +17,9 @@ var peliculas = [
     },
     {
         id: 2,
-        titulo: "La sorra de severá",
-        imagenPrincipal: "https://infoliteraria.com/wp-content/uploads/2022/05/la-probabilidad-estaditica.jpg.webp",
-        descripcion: "Hadley y Oliver comienzan a enamorarse lentamente en un vuelo de Nueva York a Londres, pero se ven obligados a separarse en la aduana.",
+        titulo: "Star Wars: El ascenso de Skywalker",
+        imagenPrincipal: "https://hips.hearstapps.com/hmg-prod/images/poster-star-wars-el-ascenso-de-skywalker-1571727372.jpg",
+        descripcion: "La Resistencia sobreviviente se enfrenta a la Primera Orden, y Rey, Finn, Poe y el resto de los héroes encararán nuevos retos y una batalla final con la sabiduría de las generaciones anteriores.",
         rating: [
             { src: "img/star.png", height: undefined },
             { src: "img/star.png", height: 24 },
@@ -33,9 +33,9 @@ var peliculas = [
     },
     {
         id: 3,
-        titulo: "Sintposiano violado de burras",
-        imagenPrincipal: "https://infoliteraria.com/wp-content/uploads/2022/05/la-probabilidad-estaditica.jpg.webp",
-        descripcion: "Hadley y Oliver comienzan a enamorarse lentamente en un vuelo de Nueva York a Londres, pero se ven obligados a separarse en la aduana.",
+        titulo: "No Countries for Old Men",
+        imagenPrincipal: "https://i.ebayimg.com/images/g/Q9wAAOSwUEVYCrhg/s-l1200.webp",
+        descripcion: "Un cazador de antílopes encuentra una escena de crimen en el desierto de Texas, con dos millones de dólares y varios cadáveres. El cazador decide quedarse con el dinero, pero pronto se da cuenta de que está siendo perseguido por un asesino psicópata.",
         rating: [
             { src: "img/star.png", height: undefined },
             { src: "img/star.png", height: 24 },
@@ -139,6 +139,16 @@ $submit.onclick = function (event) {
     let cedula = document.querySelector("#cedula").value
     let id_pel = document.querySelector("#pelicula").value
     let horario = document.querySelector("#hora").value
+    
+    if (cedula === "") {
+        alert("Ingrese su cedula")
+        return
+    }
+
+    if (cedula.length < 6) {
+        alert("Ingrese una cedula valida")
+        return
+    }
 
     let reserva = {
         cedula: cedula,
@@ -146,8 +156,8 @@ $submit.onclick = function (event) {
         nombre: peliculas[id_pel - 1].titulo,
         horario: horario
     }
-    console.log(reserva)
-    console.log(cedula);
+    // console.log(reserva)
+    // console.log(cedula);
     reservas.push(reserva)
     localStorage.setItem("reservas", JSON.stringify(reservas))
 
