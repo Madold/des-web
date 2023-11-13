@@ -280,7 +280,7 @@ footer {
     height: 270px;
 }
 
-.upcoming_movies {
+#upcoming_movies {
     display: flex;
     align-items: center;
     gap: 16px;
