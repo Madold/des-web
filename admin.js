@@ -28,7 +28,8 @@ function crearReservas(reserva) {
   let $acciones = document.createElement("td")
   $acciones.classList.add("acciones")
   let $btn_eliminar = document.createElement("button")
-  $btn_eliminar.textContent = "❌"
+  $btn_eliminar.textContent = "X"
+  $btn_eliminar.classList.add("btn", "btn-danger")
   $btn_eliminar.onclick = function () {
     eliminarReserva(reserva)
   }
